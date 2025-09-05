@@ -1,26 +1,5 @@
-Vim
-===
+This is a clean slate to backup my dotfiles so that I can leverage them in other systems as needed.  It's way far from perfect, but it's a start.  An overhaul of the old vim configs was long overdue.  I've since moved to Neovim, rendering the old vim configurations irrelevant.
 
-This vim solution is used accross multiple Windows 7 machines.  
-It requires the creation of symbolic links in the command line, 
-for which admin privileges are required.  If the command line 
-doesn't allow for the creation of links in the Program Files 
-directory, try by running the command prompt as administrator
-((1) Right-click on the command prompt on the start menu and 
-(2) click "Run as Administrator").
+TODO:
 
-
-Installation
-============
-
-Assuming vim is installed in 'c:/Program Files/Vim'
-
-1. mkdir %USERPROFILE%\vim
-2. mkdir %USERPROFILE%\vim\vimfiles
-3. Move whatever is inside the vimfiles original directory (Program Files) to the vimfiles directory just created.
-4. Move the _vimerc file from Program Files to %USERPROFILE%\vim
-5. cd 'c:/Program Files (x86)/Vim'
-6. mklink _vimrc %USERPROFILE%\vim\\_vimrc
-7. git clone https://github.com/gmarik/Vundle.vim.git %USERPROFILE%/vim/vimfiles/bundle/Vundle.vim
-7. open gvim and run :BundleInstall! (you will probably have to remove existing plugins before in order to make space for the downloaded plugin repositories)
-
+[ ] How do I keep my system up-to-date while also keeping those changes synched to the git repo?
